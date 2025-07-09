@@ -7,6 +7,7 @@
     <form>
       <label>enter your player name here</label>
       <input id="playerName" placeholder="Enter name" />
+      <button onclick="displayInputValue()">Get Value</button>
     </form>
     <p id="playerNameOutput"></p>
   </body>
@@ -18,9 +19,12 @@
     // function printElement(text) {
     //   document.getElementById("playerNameOutput").innerText = text;
     // }
-    const playerNameElement = document.getElementById("playerName");
-    const pName = playerNameElement.value;
-    document.getElementById("playerNameOutput").innerText = pName;
+    function displayInputValue() {
+      const playerNameElement = document.getElementById("playerName");
+      const pName = playerNameElement.value;
+      document.getElementById("playerNameOutput").innerText = pName;
+    }
+    
     //.addEventListener("submit", printElement(document.getElementById("playerName").value));
   </script>
 </html>
