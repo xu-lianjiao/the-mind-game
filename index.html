@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head><title>woahhh</title></head>
+  <head><title>Serious project hehe</title></head>
   <body>
-    <h1>hello!</h1>
-    <p>yippee</p>
-    <search>
-      <form>
-        <label>enter your player name here</label>
-        <input id="player-name" placeholder="Enter name" />
-      </form>
-    </search>
+    <h1>placeholder name!</h1>
+    <p>blah blah</p>
+    <form>
+      <label>enter your player name here</label>
+      <input id="playerName" placeholder="Enter name" />
+    </form>
+    <p id="playerNameOutput"></p>
   </body>
 
   <script>
     for(var i=0; i<5; i++) {
       console.log(i)
     }
+    function printElement(text) {
+      document.getElementById("playerNameOutput").innerText = text;
+    }
+    document.getElementById("playerName").addEventListener("submit", printElement(document.getElementById("playerName").value));
   </script>
 </html>
